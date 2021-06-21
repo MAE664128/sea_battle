@@ -156,7 +156,7 @@ impl Component for PlayBoard {
                     <h1 class="title">{ name_second_player + " Field" }</h1>
                     <PlayField
                         field_number=2
-                        is_fog_of_war=false
+                        is_fog_of_war=true
                         is_interactive=is_manual_control_first_player
                         parent_call=parent_call.clone()
                     ></PlayField>
