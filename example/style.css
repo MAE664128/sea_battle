@@ -1,0 +1,165 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapper > div {
+    flex: 1 1 400px;
+}
+
+.game-cells {
+    width: 32px;
+    height: 32px;
+    outline: 2px solid #72adef;
+    display: inline-block;
+}
+
+.game-row {
+    white-space: nowrap
+}
+
+.cell-deck {
+    position: relative;
+    background-color: #72adef;
+    color: #72adef;
+    height: 32px;
+    width: 32px;
+}
+
+.cell-miss {
+    position: relative;
+}
+
+.cell-miss:before {
+    color: #72adef;
+    content: "\2022";
+    left: 13px;
+    height: 33px;
+    width: 2px;
+    font-size: 26px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+}
+
+.cell-fire {
+    position: relative;
+}
+
+.cell-fire:before, .cell-fire:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #ff5858;
+}
+
+.cell-fire:before {
+    transform: rotate(45deg);
+}
+
+.cell-fire:after {
+    transform: rotate(-45deg);
+}
+
+.form_container {
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    text-align: left;
+    width: 70%;
+}
+
+.form_container ul {
+    font-size: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.form_container li {
+    display: block;
+    margin: 0;
+    padding: 4px 5px 2px 9px;
+    position: relative;
+}
+
+.form_container li:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.form_container .buttons {
+    clear: both;
+    display: block;
+    margin-top: 10px;
+}
+
+.form_container .buttons:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.form_container li div {
+    color: #444;
+    margin: 0 4px 0 0;
+    padding: 0 0 8px;
+}
+
+.form_container label.description {
+    border: none;
+    color: #222;
+    display: block;
+    font-size: 95%;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 0 0 1px;
+}
+
+.form_container input.text {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-top: 1px solid #7c7c7c;
+    color: #333;
+    font-size: 100%;
+    margin: 0;
+    padding: 2px 0;
+}
+
+.form_container select.select {
+    color: #333;
+    font-size: 100%;
+    margin: 1px 0;
+    padding: 1px 0 0;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-top: 1px solid #7c7c7c;
+}
+
+.form_container select.select[class]
+{
+	margin:0;
+	padding:1px 0;
+}
+
+.form_container input.medium
+{
+	width:50%;
+}
+
+.form_container select.medium
+{
+	width:50%;
+}
