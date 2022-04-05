@@ -10,7 +10,7 @@ You can play the WASM version online [Temporarily absent]().
 
 ## Example
 
-![Alt Text](doc/gif.gif)
+![Alt Text](docs/gif.gif)
 
 
 
