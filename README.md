@@ -6,7 +6,7 @@ This project is a Sea Battle built with [rust](https://www.rust-lang.org/), [was
 
 ## Demo
 
-You can play the WASM version online [Temporarily absent](https://mae664128.github.io/sea_battle/). 
+You can play the WASM version [online](https://mae664128.github.io/sea_battle/). 
 
 ## Example
 
